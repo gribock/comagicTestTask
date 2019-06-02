@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/communications.css';
-
+/* Display maximum 10 communication numbers.
+    If comunication_number === null - don't display it. */
 const CommunicationNumberList = (props) => {
     let communicationNumbers = props.numbers.filter((number) => {
         return number.communication_number !== null;

@@ -1,5 +1,28 @@
 /*
     Neet to refactor (recursive function?????)
+    
+    Make from :
+        [
+            {site_domain_name, campaign_name, communication_type, communication_number},
+            ...........
+        ]
+    this:
+        [
+            {site_domain_name, [
+                    {campaign_name, [
+                            {communication_type, [
+                                    {communication_number},
+                                    ...................
+                                ]                            
+                            },
+                            .................
+                        ]                    
+                    },
+                    ................
+                ]
+            },
+            ..............
+        ]
 */ 
 const composeer = (arr) => {
     let domainArray = arr.reduce((obj, item) => {

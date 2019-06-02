@@ -1,4 +1,6 @@
 import dateISOS from './formatDate';
+/* Use https://cors-anywhere.herokuapp.com/, because answer
+not came (CORS politic) */
 const comapiRequest = (dateFrom, dateTill) => {
     if((dateTill - dateFrom) <= 0)
     {
